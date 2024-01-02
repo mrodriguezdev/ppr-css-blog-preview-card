@@ -25,6 +25,12 @@ body {
     font-family: var(--body-font);
     background-color: var(--yellow);
     font-size: 1.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
 }
 
 .container {
@@ -32,4 +38,69 @@ body {
     width: 90%;
     width: min(90%, 120rem);
     margin: 0 auto;
+}
+
+/* Mobile */
+.card {
+    background-color: var(--white);
+    border: 1px solid var(--black);
+    border-radius: 1.5rem;
+    max-width: 30rem;
+    width: min(100%, 30rem);
+    margin: 0 auto;
+    padding: 1.7rem;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 1.7rem;
+    height: 100%;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+}
+
+.card-content span {
+    background: var(--yellow);
+    border-radius: .4rem;
+    font-weight: 800;
+    padding: .8rem;
+}
+
+
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.footer-content img {
+    width: 3rem;
+    height: 3rem;
+}
+
+.footer-content h3 {
+    font-weight: 800;
+    font-size: 1.7rem;
+}
+
+
+/* Desktop */
+@media screen and (width >1440px) {}
+
+
+/* FrontEnd Mentor */
+.attribution {
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
 }
